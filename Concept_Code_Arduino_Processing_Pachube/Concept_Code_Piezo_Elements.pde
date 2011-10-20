@@ -30,9 +30,6 @@ void setup()
     Firmata.begin(57600); // speed of which data is sent to processing
 }
 void loop() {
-
- //currentDist = analogRead(motionPin); // reading the current value of the proximity sensor.
- //Firmata.sendAnalog(5, currentDist); // sending the values taken from currentDist to "5" in processing.
     
  sensorReading1 = analogRead(knockSensor1); // reading the values for knockSensor1
   Firmata.sendAnalog(3, sensorReading1); // sending the vaules taken fron sensorReading to "3" in processing.
